@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Menu</class>
+ <widget class="QMainWindow" name="Menu">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuProdutos">
+    <property name="title">
+     <string>Produtos</string>
+    </property>
+    <addaction name="actionCadastrar_Produto"/>
+    <addaction name="actionAlterar_Produto"/>
+    <addaction name="actionExcluir_Produto"/>
+    <addaction name="separator"/>
+    <addaction name="actionPesquisar_Produtos"/>
+   </widget>
+   <widget class="QMenu" name="menuEstoque">
+    <property name="title">
+     <string>Estoque</string>
+    </property>
+    <addaction name="actionPesquisar_Produtos_2"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuOr_amento">
+    <property name="title">
+     <string>Orçamento</string>
+    </property>
+    <addaction name="actionRealizar_Or_amento_Cliente"/>
+    <addaction name="separator"/>
+    <addaction name="actionRelat_rio_de_Or_amento"/>
+    <addaction name="actionCriar_Relat_rio_de_Fornecedor_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionCriar_Relat_rio_de_Fornecedor_3"/>
+    <addaction name="actionAlterar_Relat_rio_de_Fornecedor"/>
+    <addaction name="separator"/>
+    <addaction name="actionExcluir_Relat_rios"/>
+    <addaction name="actionPesquisar_Relat_rios"/>
+   </widget>
+   <widget class="QMenu" name="menuGerenciador_de_Vendas">
+    <property name="title">
+     <string>Gerenciador de Vendas</string>
+    </property>
+    <widget class="QMenu" name="menuVendas">
+     <property name="title">
+      <string>Vendas</string>
+     </property>
+     <addaction name="actionNotas_Fiscais"/>
+    </widget>
+    <addaction name="menuVendas"/>
+    <addaction name="actionEntregas_de_Produtos"/>
+   </widget>
+   <widget class="QMenu" name="menuGerenciador_de_Compras">
+    <property name="title">
+     <string>Gerenciador de Compras</string>
+    </property>
+    <addaction name="actionLista_de_Compras_2"/>
+    <addaction name="actionLista_de_Fornecedores"/>
+    <addaction name="actionPedidos_de_Or_amentos"/>
+    <addaction name="actionPedidos_Realizados"/>
+   </widget>
+   <widget class="QMenu" name="menuCaixa">
+    <property name="title">
+     <string>Caixa</string>
+    </property>
+    <addaction name="actionEmiss_o_de_Nota_Fiscal"/>
+    <addaction name="actionCancelamento"/>
+    <addaction name="actionCancelar_Produto"/>
+   </widget>
+   <widget class="QMenu" name="menuCadastros">
+    <property name="title">
+     <string>Cadastros</string>
+    </property>
+    <addaction name="actionUsu_rios"/>
+    <addaction name="actionCliente_Empresa"/>
+    <addaction name="actionCliente_Balc_o"/>
+   </widget>
+   <widget class="QMenu" name="menuLogout">
+    <property name="title">
+     <string>Configurações</string>
+    </property>
+    <addaction name="actionRedefinir_Senha"/>
+    <addaction name="actionLogout"/>
+   </widget>
+   <addaction name="menuGerenciador_de_Compras"/>
+   <addaction name="menuGerenciador_de_Vendas"/>
+   <addaction name="menuOr_amento"/>
+   <addaction name="menuCaixa"/>
+   <addaction name="menuProdutos"/>
+   <addaction name="menuEstoque"/>
+   <addaction name="menuCadastros"/>
+   <addaction name="menuLogout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCadastrar_Produto">
+   <property name="text">
+    <string>Cadastrar Produto</string>
+   </property>
+  </action>
+  <action name="actionAlterar_Produto">
+   <property name="text">
+    <string>Alterar Produto</string>
+   </property>
+  </action>
+  <action name="actionExcluir_Produto">
+   <property name="text">
+    <string>Excluir Produto</string>
+   </property>
+  </action>
+  <action name="actionPesquisar_Produtos">
+   <property name="text">
+    <string>Pesquisar Produtos</string>
+   </property>
+  </action>
+  <action name="actionRelat_rio_de_Or_amento">
+   <property name="text">
+    <string>Criar Relatório de Orçamento</string>
+   </property>
+  </action>
+  <action name="actionCriar_Relat_rio_de_Fornecedor">
+   <property name="text">
+    <string>Criar Relatório de Fornecedor</string>
+   </property>
+  </action>
+  <action name="actionAlterar_Relat_rio_de_Or_amento">
+   <property name="text">
+    <string>Alterar Relatório de Orçamento</string>
+   </property>
+  </action>
+  <action name="actionCriar_Relat_rio_de_Fornecedor_2">
+   <property name="text">
+    <string>Alterar Relatório de Orçamento</string>
+   </property>
+  </action>
+  <action name="actionCriar_Relat_rio_de_Fornecedor_3">
+   <property name="text">
+    <string>Criar Relatório de Fornecedor</string>
+   </property>
+  </action>
+  <action name="actionAlterar_Relat_rio_de_Fornecedor">
+   <property name="text">
+    <string>Alterar Relatório de Fornecedor</string>
+   </property>
+  </action>
+  <action name="actionExcluir_Relat_rios">
+   <property name="text">
+    <string>Excluir Relatórios</string>
+   </property>
+  </action>
+  <action name="actionPesquisar_Relat_rios">
+   <property name="text">
+    <string>Pesquisar Relatórios</string>
+   </property>
+  </action>
+  <action name="actionCompras">
+   <property name="text">
+    <string>Compras</string>
+   </property>
+  </action>
+  <action name="actionEntregas_de_Produtos">
+   <property name="text">
+    <string>Entregas de Produtos</string>
+   </property>
+  </action>
+  <action name="actionRealizar_Or_amento_Cliente">
+   <property name="text">
+    <string>Realizar Orçamento - Cliente</string>
+   </property>
+  </action>
+  <action name="actionPesquisar_Produtos_2">
+   <property name="text">
+    <string>Pesquisar Produtos</string>
+   </property>
+  </action>
+  <action name="actionCompras_2">
+   <property name="text">
+    <string>Compras</string>
+   </property>
+  </action>
+  <action name="actionLista_de_Compras">
+   <property name="text">
+    <string>Lista de Compras</string>
+   </property>
+  </action>
+  <action name="actionProdutos_Comprados">
+   <property name="text">
+    <string>Produtos Comprados</string>
+   </property>
+  </action>
+  <action name="actionLista_de_Compras_2">
+   <property name="text">
+    <string>Lista de Compras</string>
+   </property>
+  </action>
+  <action name="actionLista_de_Fornecedores">
+   <property name="text">
+    <string>Lista de Fornecedores</string>
+   </property>
+  </action>
+  <action name="actionPedidos_de_Or_amentos">
+   <property name="text">
+    <string>Pedidos de Orçamentos</string>
+   </property>
+  </action>
+  <action name="actionPedidos_Realizados">
+   <property name="text">
+    <string>Pedidos Realizados</string>
+   </property>
+  </action>
+  <action name="actionNotas_Fiscais">
+   <property name="text">
+    <string>Notas Fiscais - Histórico</string>
+   </property>
+  </action>
+  <action name="actionEmiss_o_de_Nota_Fiscal">
+   <property name="text">
+    <string>Emissão de Nota Fiscal</string>
+   </property>
+  </action>
+  <action name="actionCancelamento">
+   <property name="text">
+    <string>Cancelamento</string>
+   </property>
+  </action>
+  <action name="actionCancelar_Produto">
+   <property name="text">
+    <string>Cancelar Produto</string>
+   </property>
+  </action>
+  <action name="actionUsu_rios">
+   <property name="text">
+    <string>Usuários</string>
+   </property>
+  </action>
+  <action name="actionCliente_Empresa">
+   <property name="text">
+    <string>Cliente Empresa</string>
+   </property>
+  </action>
+  <action name="actionCliente_Balc_o">
+   <property name="text">
+    <string>Cliente Balcão</string>
+   </property>
+  </action>
+  <action name="actionRedefinir_Senha">
+   <property name="text">
+    <string>Redefinir Senha</string>
+   </property>
+  </action>
+  <action name="actionLogout">
+   <property name="text">
+    <string>Logout</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
