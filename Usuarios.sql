@@ -1,0 +1,12 @@
+CREATE TABLE Usuario (id INT NOT NULL AUTO_INCREMENT,
+Nome INT,
+Nascimento VARCHAR(10),
+Telefone INT(11),
+Email VARCHAR(60),
+CPF INT(11),
+Login VARCHAR(12),
+Senha VARCHAR(12),
+PRIMARY KEY (id)
+);
+
+
