@@ -1,0 +1,11 @@
+CREATE TABLE Cliente (id INT NOT NULL AUTO_INCREMENT,
+Razão_Social INT,
+CNPJ VARCHAR(18),
+Email VARCHAR(60),
+DDD INT(2),
+Telefone INT(8),
+Endereço VARCHAR(70),
+Cidade VARCHAR(20),
+Estado VARCHAR(2),
+PRIMARY KEY (id)
+);
